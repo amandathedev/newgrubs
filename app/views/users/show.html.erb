@@ -4,7 +4,7 @@
   <h3>Your order history:</h3>
     <%if @current_user.orders.count > 0%>
         <%@current_user.orders.each do |order|%>
-          Order No. <%=order.id%>
+           <%=link_to order.viewable, order_path(order)%>
           <%=order.created_at.strftime("%b %d, %Y")%>
           <%cart_total = 0 %>
           <%order.order_items.each do |i|%>
