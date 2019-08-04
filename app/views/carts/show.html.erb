@@ -26,5 +26,8 @@
 
     <%if @order_items.any? %>
       <a href = '/orders/<%="#{session[:order_id]}/confirmation"%>'><button type="button" class="btn btn-outline-danger btn-sm">Checkout</button></a>
+      <a href = '/clearcart'><button type="button" class="btn btn-outline-danger btn-sm" method="delete">Clear Cart</button></a>
+      <%=link_to "Clear Cart", '/clearcart', method: :delete%>
+
     <%end%>
   </div>
