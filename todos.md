@@ -8,6 +8,10 @@ Confirm login/logout with alert
 Correct validations on forms
 Phone number, address on user profile with consistent formatting
 What happened to the images???
+Itemized receipts from user profiles
+Cuisine and restaurant cards clickable
+Restaurant card margins/responsiveness
+Clear cart
 
 
 
@@ -15,3 +19,4 @@ What happened to the images???
 <!-- Ideas -->
 Favorite restaurants on profile
 Driver?
+Coupon codes
