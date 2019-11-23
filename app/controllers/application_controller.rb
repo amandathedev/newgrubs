@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_order
 
   def current_order
-    if session[:order_id]
+    if session[:order_id] && Order.find(session[:order_id]).exists?
       Order.find(session[:order_id])
     else
       order = Order.create(user_id: session[:user_id], status: false)
